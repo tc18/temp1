@@ -1,22 +1,9 @@
 version: 1
 
-merge:
-  trigger:
-    labels: ["merge when ready"]
-    comment_substrings: ["==MERGE_WHEN_READY=="]
-  whitelist:
-    labels: ["automerge"]
-    comment_substrings: ["==AUTOMERGE=="]
-  ignore:
-    labels: ["do not merge"]
-    comment_substrings: ["==DO_NOT_MERGE=="]
-  method: squash
-  options:
-    squash:
-      body: summarize_commits
-  delete_after_merge: true
-  allow_merge_with_no_checks: false
-
-update:
-  trigger:
-    labels: ["wip", "update me"]
+pull_request:
+  auto_merge:
+    pr_title: 'automerge PR'
+    pr_user: 'tc18'
+    pr_labels: ['automerge']
+    pr_head_branch: 't11'
+    pr_base_branch: 'master'
