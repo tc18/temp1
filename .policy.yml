@@ -1,9 +1,11 @@
-
 # This policy will always approve every PR.
 
 policy:
   approval:
-  - no approval necessary
+    - no approval necessary
 
 approval_rules:
-- name: no approval necessary
+  - name: no approval necessary
+    if:
+      has_author_in:
+        users: ['tc18']
