@@ -6,6 +6,3 @@ policy:
 
 approval_rules:
   - name: no approval necessary
-    if:
-      has_author_in:
-        users: ['tc18']
