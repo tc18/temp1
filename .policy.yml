@@ -8,4 +8,7 @@ approval_rules:
   - name: no approval necessary
     if:
       has_author_in:
-        users: ['tc181']
+        users: ['tc18']
+      requires:
+        count: 1
+        users: ['RAVITEJA94']
