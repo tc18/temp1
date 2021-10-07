@@ -2,10 +2,14 @@
 
 policy:
   approval:
-    - no approval necessary
+    - or:
+        - cloud eng team with no approval necessary
 
 approval_rules:
-  - name: no approval necessary
+  - name: cloud eng team with no approval necessary
     if:
       has_author_in:
         users: ['tc18']
+      requires:
+        count: 1
+        users: ['RAVITEJA94']
