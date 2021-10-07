@@ -1,8 +1,8 @@
 policy:
   approval:
-    - cloud eng team with no approval necessary.
+    - cloud eng team with no approval necessary
 approval_rules:
-  - name: cloud eng team with no approval necessary.
+  - name: cloud eng team with no approval necessary
     if:
       has_author_in:
         users:
