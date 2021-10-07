@@ -3,6 +3,7 @@ version: 1
 merge:
   trigger:
     comment_substrings: ["==MERGE_WHEN_READY=="]
+    title: "==MERGE_WHEN_READY=="
   ignore:
     comment_substrings: ["==DO_NOT_MERGE=="]
   method: squash
