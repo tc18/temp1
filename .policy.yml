@@ -9,6 +9,3 @@ approval_rules:
     if:
       has_author_in:
         users: ['tc18']
-      requires:
-        count: 1
-        users: ['RAVITEJA94']
