@@ -9,7 +9,7 @@ approval_rules:
       count: 1
       users:
         - RAVITEJA94
-  - name: the devtools team has approved
+  - name: no approval
     if:
       has_author_in:
         users:
