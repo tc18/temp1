@@ -3,9 +3,6 @@ policy:
     - the devtools team has approved
 approval_rules:
   - name: the devtools team has approved
-    has_author_in:
-      users:
-        - tc18
     requires:
       count: 1
       users:
