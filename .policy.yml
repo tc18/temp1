@@ -1,9 +1,16 @@
 policy:
   approval:
-    - the devtools team has approved
+    - or:
+        - no approval
+        - the devtools team has approved
 approval_rules:
   - name: the devtools team has approved
     requires:
       count: 1
       users:
         - RAVITEJA94
+  - name: the devtools team has approved
+    if:
+      has_author_in:
+        users:
+          - tc18
