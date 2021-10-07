@@ -1,15 +1,13 @@
-# This policy will always approve every PR.
-
 policy:
   approval:
-    - or:
-        - cloud eng team with no approval necessary
-
+    - cloud eng team with no approval necessary
 approval_rules:
   - name: cloud eng team with no approval necessary
     if:
       has_author_in:
-        users: ['tc18']
+        users:
+          - tc18
       requires:
         count: 1
-        users: ['RAVITEJA94']
+        users:
+          - RAVITEJA94
