@@ -1,12 +1,12 @@
 policy:
   approval:
-    - cloud eng team with no approval necessary
+    - the devtools team has approved
 approval_rules:
-  - name: cloud eng team with no approval necessary
-    if:
-      has_author_in:
-        users:
-          - tc18
-      requires:
-        count: 1
-        users: ['RAVITEJA94']
+  - name: the devtools team has approved
+    has_author_in:
+      users:
+        - tc18
+    requires:
+      count: 1
+      users:
+        - RAVITEJA94
